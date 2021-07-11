@@ -2,7 +2,7 @@ import React, { useEffect } from "react"
 import axios from "axios"
 import { useDispatch } from "react-redux"
 import Post from "../../components/Post"
-import { setPosts, url, fetchPosts } from "../../redux/action-creators/posts"
+import { setPosts, url } from "../../redux/action-creators/posts"
 import { IsinglePost } from "../../redux/types/postsType"
 import {
   SPostsWrapper,
@@ -20,14 +20,14 @@ export default function Posts({ posts }: IHomeProps) {
   const dispatch = useDispatch()
 
   useEffect(() => {
-    dispatch(fetchPosts())
+    dispatch(setPosts(posts))
   }, [posts, dispatch])
 
   return (
     <div>
       <SPostsMainTitle>Posts</SPostsMainTitle>
       <Link href="/posts/new">
-        <SAddNewPostsButton>add new posts</SAddNewPostsButton>
+        <SAddNewPostsButton>add new post</SAddNewPostsButton>
       </Link>
       <SPostsWrapper>
         {posts.map((post: IsinglePost) => {
