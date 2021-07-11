@@ -27,7 +27,7 @@ export default function Posts({ posts }: IHomeProps) {
     <div>
       <SPostsMainTitle>Posts</SPostsMainTitle>
       <Link href="/posts/new">
-        <SAddNewPostsButton>add new post</SAddNewPostsButton>
+        <SAddNewPostsButton>add new posts</SAddNewPostsButton>
       </Link>
       <SPostsWrapper>
         {posts.map((post: IsinglePost) => {
