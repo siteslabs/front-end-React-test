@@ -1,0 +1,28 @@
+// {
+//     "editor.codeActionsOnSave": {
+//         "eslint.autoFixOnSave": true,
+//         "source.fixAll.eslint": true
+//     },
+
+//     "editor.formatOnSave": true,
+//     "[javascript]": {
+//         "editor.formatOnSave": false
+//     },
+//     "[javascriptreact]": {
+//         "editor.formatOnSave": false
+//     },
+//     "[typescript]": {
+//         "editor.formatOnSave": false
+//     },
+//     "[typescriptreact]": {
+//         "editor.formatOnSave": false
+//     },
+//     "eslint.validate": ["javascript", "javascriptreact"],
+//     "bracket-pair-colorizer-2.colors": ["Gold", "Orchid", "LightSkyBlue"],
+//     "bracket-pair-colorizer-2.activeScopeCSS": [
+//         "borderStyle : solid",
+//         "borderWidth : 1px",
+//         "borderColor : {color}",
+//         "opacity: 0.5"
+//     ]
+// }

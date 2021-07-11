@@ -1,0 +1,6 @@
+.inputError {
+  border: 1px solid red !important;
+}
+.textError {
+  color: red;
+}
