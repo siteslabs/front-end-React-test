@@ -15,7 +15,7 @@ import Link from "next/link"
 interface IHomeProps {
   posts: IsinglePost[]
 }
-// test
+
 export default function Posts({ posts }: IHomeProps) {
   const dispatch = useDispatch()
 
