@@ -15,7 +15,7 @@ import Link from "next/link"
 interface IHomeProps {
   posts: IsinglePost[]
 }
-
+// test
 export default function Posts({ posts }: IHomeProps) {
   const dispatch = useDispatch()
 
@@ -26,7 +26,7 @@ export default function Posts({ posts }: IHomeProps) {
   return (
     <div>
       <SPostsMainTitle>Posts</SPostsMainTitle>
-      <Link href="/posts/new">
+      <Link href="/posts/new" passHref>
         <SAddNewPostsButton>add new post</SAddNewPostsButton>
       </Link>
       <SPostsWrapper>
